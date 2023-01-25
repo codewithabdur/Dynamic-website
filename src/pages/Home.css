@@ -1,0 +1,151 @@
+:root {
+    --nav: #00ffc4;
+    /* --nav: #e81c48; */
+    --btn: #1C867D;
+    --main-bg: #a6a6a6;
+    --main-color: #d9d9d9;
+    --dark: #9c9494;
+    --nav-op-2: #1fb69394;
+  }
+
+.Container{
+    background-image: linear-gradient(rgba(0,0,0, 0.2),rgba(0,0,0, 0.1)), url('../images/2_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.me {
+    padding-left: 967px;
+    padding-top: 150px;
+}
+
+.me img{
+    border: 10px solid var(--nav);
+    border-radius: 350px;
+    cursor: pointer;
+    transition: all .8s ease;
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+}
+
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+
+
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+
+.info{
+    margin-top: -16rem;
+    margin-left: 8rem;
+}
+
+.info .h1{
+    font-size: 4.8rem;
+}
+
+.info .text{
+    color: var(--nav);
+}
+
+.social-icons a{
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 3.2rem;
+    color: #fff;
+    transition: transform .8s ease;
+}
+
+.social-icons a:hover{
+    /* color: var(--nav); */
+    color: var(--nav);
+    transform: translateY(-4px);
+}
+
+.box{
+    z-index: 2;
+}
+
+
+
+.xtra-css:hover{
+    background: var(--nav-op-2);
+}
+
+@media screen and (max-width: 1250px) {
+    .me {
+        padding-left: 150px;
+        padding-top: 70px;
+    }
+
+    .box{
+        padding-top: 7rem;
+    }
+
+    .me img{
+       width: 300px;
+       height: 300px;
+    }
+
+    .info{
+        margin-top: 0;
+    }
+
+    .info .h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .Container{
+        background-image: url(../images/2_bg_m.png);
+    }
+    .box{
+        padding-top: 3rem;
+    }
+    .me{
+        padding-left: 30px;
+    }
+
+    .me img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .info .h1{
+        font-size: 30px;
+        margin-left: -80px;
+    }
+
+    .social-icons{
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .social-icons a{
+        font-size: 30px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-left: 4px;
+        margin-right: 8px;
+    }
+    
+}
+
+.child{
+    color: var(--nav);
+}
+

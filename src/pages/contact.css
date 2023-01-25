@@ -1,0 +1,40 @@
+@media only screen and (max-width: 400px) {
+    .med{
+        display: block;
+    }
+    input{
+        padding-right: 0;
+    }
+    .mar{
+        margin-right: .5rem;
+        margin-left: .5rem;
+    }
+
+    .ali{
+        margin-bottom: .5rem;
+    }
+}
+
+.xtra-css-c{
+    background: var(--nav);
+}
+.xtra-css-ct{
+   color: var(--nav);
+}
+
+.xtra-css-t:hover{
+    color: var(--nav);
+}
+
+.bos{
+    box-shadow: 4px 4px 4px  rgba(96, 230, 168, 0.768);
+}
+
+#msg{
+    color: rgb(49, 213, 235);
+    transition: all ease;
+}
+
+.heart{
+    color: var(--nav);
+}

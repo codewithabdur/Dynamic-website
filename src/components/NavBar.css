@@ -1,0 +1,167 @@
+:root {
+    --nav: #00ffc4;
+    --btn: #1C867D;
+    --main-bg: #a6a6a6;
+    --main-color: #d9d9d9;
+    --dark: #9c9494;
+}
+
+
+
+.NavBar {
+    height: 15vh;
+}
+
+.NavBar {
+    position: fixed;
+    align-items: center;
+}
+
+.NavBar .logo {
+    width: 180px;
+    height: 50px;
+    margin-left: 240px;
+    margin-top: 10px;
+}
+
+.NavBar ul {
+    margin-left: 350px;
+}
+
+.NavBar ul li {
+    list-style: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.NavBar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.NavBar .child {
+    color: var(--nav);
+}
+
+.NavBar ul li a:hover {
+    color: var(--nav);
+    text-shadow: 4px 4px 4px #fff;
+}
+
+
+nav .fas {
+    display: none;
+    color: #fff;
+    /* color: #111; */
+}
+
+
+@media only screen and (max-width: 800px) {
+    .NavBar {
+        width: 100%;
+    }
+
+
+
+    .NavBar .logo {
+        margin-left: 2rem;
+        margin-top: 10px;
+    }
+
+    .burger{
+        margin-left: 10rem;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 41px;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        background: var(--main-bg);
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 300px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+        font-size: 23px;
+        font-weight: 600;
+        
+    }
+
+    nav ul li a {
+        margin-left: 60px;
+    }
+
+   
+
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .logo {
+        margin-top: 20px;
+        padding-left: -20px;
+        padding-right: 80px;
+    }
+
+    .w {
+        margin-right: 140px;
+    }
+
+
+}
+
+@media only screen and (max-width:520px) {
+
+    .burger{
+      margin-left: -0.2rem;
+    }
+
+    
+}
+
+.heart {
+    animation: animateHeart 1.2s infinite;
+  }
+
+  @keyframes animateHeart {
+    0% {
+      transform: scale(0.8);
+    }
+    5% {
+      transform: scale(0.9);
+    }
+    10% {
+      transform: scale(0.8);
+    }
+    15% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
+
+ 
